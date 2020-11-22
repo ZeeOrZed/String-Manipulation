@@ -1,7 +1,6 @@
 Hi person reading this!
 
 This project is about basic string manipulation codes and techniques. They are done in Visual Basic, and their pseudocode's have also been created. The tasks are listed below, however they are also listed as a part of the code for convenience. 
-A special thanks to my fellow peer Asad Irfan. Link to his Github account here: https://github.com/Asad-Irfan2003
 
 Tasks:
 
@@ -25,7 +24,7 @@ Given a string 's', return a string made of the first 2 and the last 2 character
 Given a string 's', return a string where all occurences of its first character have been changed to '*', except do not change the first character itself. e.g. 'sass' yields 'sa**'. Assume that the string is length 1 or more/
 
 9) "MixUp"
-Given strings 'a' and 'b', return a single string with a and b separated by a space '<a> <b>', except swap the first 2 characters of each string. e.g. 
+Given strings 'a' and 'b', return a single string with a and b separated by a space, except swap the first 2 characters of each string. e.g. 
 'mix', pod' -> 'pox mid'
 'dog', 'dinner' -> 'dig donner'
  Assume 'a' and 'b' are length 2 or more.
