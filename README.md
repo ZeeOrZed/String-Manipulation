@@ -15,25 +15,32 @@ Tasks:
 5) Find the count of vowels characters in an entered string separately. 
 
 6) "Donuts"
+
 Given a running count of a number of donuts, return a string in the form 'Number of donuts: <count>', where <count> is the number passed in. However, if the count is 10 or more, then use the word 'many' instead of the actual count. So, for example, donuts(5) returns 'Number of donuts: 5' and donuts(23) returns 'Number of donuts: many'
 
 7) "both_ends"
+
 Given a string 's', return a string made of the first 2 and the last 2 characters of the original string, so, for example, 'spring' yields 'spng'. However, if the string length is less than 2, return string the original string.
 
 8) "fix_start"
-Given a string 's', return a string where all occurences of its first character have been changed to '*', except do not change the first character itself. e.g. 'sass' yields 'sa**'. Assume that the string is length 1 or more/
+
+Given a string 's', return a string where all occurences of its first character have been changed to '*', except do not change the first character itself. e.g. 'sass' yields 'sa**'. Assume that the string is length 1 or more.
 
 9) "MixUp"
+
 Given strings 'a' and 'b', return a single string with a and b separated by a space, except swap the first 2 characters of each string. e.g. 
 'mix', pod' -> 'pox mid'
 'dog', 'dinner' -> 'dig donner'
  Assume 'a' and 'b' are length 2 or more.
 
 10) "verbing"
+
 Given a string, if its length is at least 3, add 'ing' to its end. unless it already ends in 'ing', in which case add 'ly' instead. If the string length is less than 3, leave it unchanged. Return the resulting string.
 
 11) "not_bad"
+
 Given a string, find the first appearance of the substring 'not' and 'bad'. If the 'bad' follows the 'not', replace the whole 'not'...'bad' substring with 'good'. Return the resulting string. So 'This dinner is not that bad!' Outputs: This dinner is good!
 
 12) {ARRAY INCLUDED} "match_ends"
+
 Hard code an array of strings, return the count of the number of strings where the string length is 2 or more and the first and last characters of the string are the same.
