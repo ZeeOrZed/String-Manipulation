@@ -2,12 +2,10 @@
 
         'Declarations:'
         Dim Sentence As String
-        Dim Change As String
         Dim Count As Integer
 
         'Initialisations:'
         Sentence = ""
-        Change = ""
 
         Console.Write("Enter an opinion of yours: ")
         Sentence = Console.ReadLine()
