@@ -1,0 +1,22 @@
+'Task: Given a running count of a number of donuts, return a string in the form 'Number of donuts: <count>', where <count> is the number passed in. However, If the count Is 10 Or more, then use the word 'many' instead of the actual count.'
+
+        'Declarations:'
+        Dim DonutsRemaining As String
+        Dim NumberOfDonuts As Integer
+
+        'Intialisation:'
+        DonutsRemaining = "yes"
+        NumberOfDonuts = 0
+
+        While DonutsRemaining = "yes"
+            NumberOfDonuts = NumberOfDonuts + 1
+            Console.WriteLine("Remove one donut. Is there a Donut remaining in the box? (answer with 'yes' or 'no')")
+            DonutsRemaining = Console.ReadLine()
+        End While
+
+        If NumberOfDonuts >= 10 Then
+            Console.WriteLine("Number of Donuts: Many")
+        Else Console.WriteLine("Number of Donuts: " & NumberOfDonuts)
+        End If
+
+        Console.ReadKey()
