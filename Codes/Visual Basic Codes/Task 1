@@ -1,0 +1,31 @@
+'Task: Find if the the input string has all of the alpbhabets.'
+
+        'Declarations:'
+        Dim Sentence As String
+        Dim Alphabets As String
+        Dim Character As Char
+        Dim Count As Integer
+        Dim Checker As Integer
+
+        'Initialisation:'
+        Sentence = ""
+        Alphabets = "abcdefghijklmnopqrstuvwxyz"
+        Character = ""
+        Count = 0
+        Checker = 0
+
+        Console.WriteLine("Enter a sentence: ")
+        Sentence = Console.ReadLine()
+        Sentence = LCase(Sentence)
+
+        For Count = 1 To 26
+            Character = Mid(Alphabets, Count, 1)
+            Checker = InStr(Sentence, Character)
+        Next
+
+        If Checker = 0 Then
+            Console.Write("Your sentence is not an anagram ;(.")
+        Else Console.Write("Your sentence is an anagram!")
+        End If
+
+        Console.ReadLine()
