@@ -1,6 +1,6 @@
 Hi person reading this!
 
-This project is about basic string manipulation codes and techniques. They are done in Visual Basic, and their pseudocode's have also been created. The tasks are listed below, however they are also listed as a part of the code for convenience. 
+This project is about basic string manipulation codes and techniques. They are done in Visual Basic, and their pseudocodes have also been created. The tasks are listed below, however they are also listed as a part of each code for convenience. 
 
 Tasks:
 
@@ -10,9 +10,9 @@ Tasks:
 
 3) Count and output the NUMBER of an entered character.
 
-4) Find the character that appears most number of times in an entered string
+4) Find the character that appears most number of times in an entered string.
 
-5) Find the count of vowels characters in an entered string separately. 
+5) Find the count of vowels in an entered string. 
 
 6) "Donuts"
 
