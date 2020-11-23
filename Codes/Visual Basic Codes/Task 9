@@ -7,7 +7,6 @@
         Dim Letter2 As Char
         Dim Letter3 As Char
         Dim Letter4 As Char
-        Dim Sentence As String
 
         'Initialisation:'
         Word1 = ""
@@ -16,7 +15,6 @@
         Letter2 = ""
         Letter3 = ""
         Letter4 = ""
-        Sentence = ""
 
         Console.Write("Enter a word: ")
         Word1 = Console.ReadLine()
