@@ -20,7 +20,7 @@
         Str = Console.ReadLine()
 
         If Len(Str) <= 4 Then
-            Console.Write("Your word will not be shortened. It will remain the same, being: " & Str)
+            Console.Write("Your word/sentence will not be shortened. It will remain the same, being: " & Str)
         Else
             For Count = 1 To Len(Str)
                 Letter1 = Mid(Str, 1, Len(Str))
