@@ -1,1 +1,22 @@
--
+'The Task: Replace selected character with another.'
+
+//DECLARATIONS:
+DECLARE Sentence: STRING
+DECLARE Character: CHARACTER
+DECLARE Count: INTEGER
+
+//INITIALISATION:
+Sentence <-- ""
+Character <-- ' '
+
+OUTPUT "Enter the sentence: "
+INPUT Sentence
+
+FOR Count = 1 TO Len(Sentence)
+    Character <-- Mid(Sentence, Count, Len(Sentence))
+    IF Character = "*" THEN
+       Mid(Sentence, Count, Len(Sentence)) <-- "a"
+    END IF
+NEXT Count
+
+OUTPUT "Your sentence has been corrected to: " & Sentence
