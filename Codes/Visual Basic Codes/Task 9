@@ -1,0 +1,37 @@
+'Task: Given strings a and b, return a single string with a and b separated by a space '<a> <b>', except swap the first 2 characters of each string.'
+
+        'Declarations:'
+        Dim Word1 As String
+        Dim Word2 As String
+        Dim Letter1 As Char
+        Dim Letter2 As Char
+        Dim Letter3 As Char
+        Dim Letter4 As Char
+        Dim Sentence As String
+
+        'Initialisation:'
+        Word1 = ""
+        Word2 = ""
+        Letter1 = ""
+        Letter2 = ""
+        Letter3 = ""
+        Letter4 = ""
+        Sentence = ""
+
+        Console.Write("Enter a word: ")
+        Word1 = Console.ReadLine()
+        Console.Write("Enter another word: ")
+        Word2 = Console.ReadLine()
+
+        Letter1 = Mid(Word1, 1, Len(Word1))
+        Letter2 = Mid(Word1, 2, Len(Word1))
+        Letter3 = Mid(Word2, 1, Len(Word2))
+        Letter4 = Mid(Word2, 2, Len(Word2))
+
+        Mid(Word1, 1, Len(Word1)) = Letter3
+        Mid(Word1, 2, Len(Word1)) = Letter4
+        Mid(Word2, 1, Len(Word2)) = Letter1
+        Mid(Word2, 2, Len(Word2)) = Letter2
+
+        Console.Write("Your words have been changed to form the sentence: " & Word1 & " " & Word2)
+        Console.ReadLine()
