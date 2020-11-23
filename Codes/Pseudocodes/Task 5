@@ -1,0 +1,32 @@
+'The Task: Find the count of vowels in an entered string.' 
+
+//DECLARATIONS:
+DECLARE Sentence: STRING
+DECLARE Character: CHAR
+DECLARE NumberOfVowels: INTEGER
+DECLARE Count: INTEGER
+
+//INITIALISATION:
+Sentence <-- ""
+Character <-- ' '
+NumberOfVowels <-- 0
+
+OUTPUT "Enter the sentence (in lower case): "
+INPUT Sentence
+
+FOR Count = 1 TO LENGTH(Sentence)
+    Character <-- Mid(Sentence, Count, LENGTH(Sentence))
+    IF Character = "a" THEN
+       NumberOfVowels <-- NumberOfVowels + 1
+    ELSEIF Character = "e" THEN
+       NumberOFVowels <-- NumberOfVowels + 1
+    ELSEIF Character = "i" THEN
+       NumberOfVowels <-- NumberOfVowels + 1
+    ELSEIF Character = "o" THEN
+       NumberOfVowels <-- NumberOFVowels + 1
+    ELSEIF Character = "u" THEN
+       NumberOfVowels <-- NumberOfVowels + 1
+    END IF
+NEXT Count
+
+OUTPUT "Your sentence has " & NumberOfVowels & " vowels!"
