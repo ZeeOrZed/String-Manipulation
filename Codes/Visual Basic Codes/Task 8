@@ -1,0 +1,24 @@
+'Task: Given a string s, return a string where all occurences of its first character have been changed to '*', except the first character itself.'
+
+        'Declarations:'
+        Dim Sentence As String
+        Dim InitialCharacter As Char
+        Dim Count As Integer
+
+        'Initialisation:'
+        Sentence = ""
+        InitialCharacter = ""
+
+        Console.Write("Enter a word/sentence: ")
+        Sentence = Console.ReadLine()
+        InitialCharacter = Mid(Sentence, 1, Len(Sentence))
+
+        For Count = 1 To Len(Sentence)
+            If Mid(Sentence, Count, 1) = InitialCharacter Then
+                Mid(Sentence, Count, 1) = "*"
+            End If
+        Next
+
+        Mid(Sentence, 1, Len(Sentence)) = InitialCharacter
+        Console.WriteLine("Your word/sentence has been censored to: " & Sentence)
+        Console.ReadLine()
