@@ -1,0 +1,22 @@
+'Task: Given a string, if its length is at least 3, add 'ing' to its end. Unless it already ends in 'ing', in which case add 'ly' instead. If the  string length is less than 3, leave it unchanged. Return the resulting string.'
+
+        'Declarations:'
+        Dim Word As String
+
+        'Initialisation:'
+        Word = ""
+
+        Console.Write("Enter a word: ")
+        Word = Console.ReadLine()
+
+        If Len(Word) < 3 Then
+            Console.Write("The word you've written will not be changed. It'll remain the same, being: " & Word)
+        ElseIf Mid(Word, Len(Word) - 2, Len(Word)) = "ing" Then
+            Word = Word & "ly"
+            Console.Write("Your word has become: " & Word)
+        Else
+            Word = Word & "ing"
+            Console.Write("Your word has become: " & Word)
+        End If
+
+        Console.ReadLine()
