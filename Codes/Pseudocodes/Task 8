@@ -1,0 +1,23 @@
+'Task: Given a string s, return a string where all occurences of its first character have been changed to '*', except the first character itself.'
+
+//DECLARATIONS:
+DECLARE Sentence: STRING
+DECLARE InitialCharacter: CHAR
+DECLARE Count: INTEGER
+
+//INITIALISATION:
+Sentence <-- ""
+InitialCharacter <-- ' '
+
+OUTPUT "Enter a word/sentence: "
+INPUT sentence
+InitialCharacter <-- Mid(Sentence, 1, LENGTH(Sentence))
+
+FOR Count = 1 TO LENGTH(Sentence)
+    IF Mid(Sentence, Count, 1) = InitialCharacter THEN
+       Mid(Sentence, Count, 1) = "*"
+    END IF
+NEXT Count
+
+Mid(Sentence, 1, LENGTH(Sentence)) <-- InitialCharacter
+OUTPUT "Your word/sentence has been censored to: " & Sentence
