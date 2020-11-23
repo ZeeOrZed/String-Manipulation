@@ -20,7 +20,7 @@ Given a running count of a number of donuts, return a string in the form 'Number
 
 7) "both_ends"
 
-Given a string 's', return a string made of the first 2 and the last 2 characters of the original string, so, for example, 'spring' yields 'spng'. However, if the string length is less than 2, return string the original string.
+Given a string 's', return a string made of the first 2 and the last 2 characters of the original string, so, for example, 'spring' yields 'spng'. However, if the string length is less than/equal to 4, return string the original string.
 
 8) "fix_start"
 
