@@ -1,0 +1,20 @@
+'The Task: Given a string, if its length is at least 3, add 'ing' to its end. Unless it already ends in 'ing', in which case add 'ly' instead. If the  string length is less than 3, leave it unchanged. Return the resulting string.'
+
+//DECLARATIONS:
+DECLARE Word: STRING
+
+//INITALISATION:
+Word <-- ""
+
+OUTPUT "Enter a word: "
+INPUT Word
+
+IF LENGTH(Word) < 3 THEN
+   OUTPUT "The word you've written will not be changed. It'll remain the same, being: " & Word
+ELSEIF Mid(Word, LENGTH(Word) - 2, LENGTH(Word)) = "ing" THEN
+       Word <-- Word & "ly"
+       OUTPUT "Your word has become: " & Word
+ELSE
+       Word <-- Word & "ing"
+       OUTPUT "Your word has become: " & Word)
+ENDIF
