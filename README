@@ -8,7 +8,7 @@ Tasks:
 
 2) Replace selected character with another.
 
-3) Count and output the NUMBER of an entered character.
+3) Count and output the ASCII value of an entered character.
 
 4) Find the character that appears most number of times in an entered string.
 
