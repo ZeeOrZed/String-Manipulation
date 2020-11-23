@@ -1,0 +1,34 @@
+'Task: Given strings a and b, return a single string with a and b separated by a space '<a> <b>', except swap the first 2 characters of each string.'
+
+//DECLARATIONS:
+DECLARE Word1: STRING
+DECLARE Word2: STRING
+DECLARE Letter1: CHAR
+DECLARE Letter2: CHAR
+DECLARE Letter3: CHAR
+DECLARE Letter4: CHAR
+
+/INITIALISATION:
+Word1 <-- ""
+Word2 <-- ""
+Letter1 <-- ' '
+Letter2 <-- ' '
+Letter3 <-- ' '
+Letter4 <-- ' '
+
+OUTPUT "Enter a word: "
+INPUT Word1
+OUTPUT "Enter another word: "
+INPUT Word2
+
+Letter1 <-- Mid(Word1, 1, LENGTH(Word1))
+Letter2 <-- Mid(Word1, 2, LENGTH(Word1))
+Letter3 <-- Mid(Word2, 1, LENGTH(Word2))
+Letter4 <-- Mid(Word2, 2, LENGTH(Word2))
+
+Mid(Word1, 1, LENGTH(Word1)) <-- Letter3
+Mid(Word1, 2, LENGTH(Word1)) <-- Letter4
+Mid(Word2, 1, LENGTH(Word2)) <-- Letter1
+Mid(Word2, 2, LENGTH(Word2)) <-- Letter 2
+
+OUTPUT "Your words have been changed to form the sentence: " & Word1 & " " & Word2
