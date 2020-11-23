@@ -1,0 +1,30 @@
+'The Task: Find if the the input string has all of the alpbhabets.'
+
+//DECLARATIONS:
+DECLARE Sentence: STRING
+DECLARE Alphabets: STRING
+DECLARE Character: CHAR
+DECLARE Count: INTEGER
+DECLARE Checker: INTEGER
+
+//INITIALISATION:
+Sentence <-- ""
+Alphabets <-- "abcdefghijklmnopqrstuvwxyz"
+Character <-- ' '
+Count <-- 0
+Checker <-- 0 
+
+OUTPUT "Enter a sentence: "
+INPUT Sentence
+Sentence <-- LCase(Sentence)
+
+FOR Count = 1 To 26
+    Character <-- Mid(Alphabets, Count, 1)
+    Checker <-- InStr(Sentence, Character)
+NEXT Count
+
+IF Checker = 0 THEN
+   OUTPUT "Your sentence is not an anagram ;("
+ELSE
+   OUTPUT "Your sentence is an anagram!"
+ENDIF
