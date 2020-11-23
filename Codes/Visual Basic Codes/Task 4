@@ -1,0 +1,41 @@
+'Task: Find the character that appears most number of times in an entered string.'
+
+        'Declarations:'
+        Dim Sentence As String
+        Dim Alphabets As String
+        Dim HighestCount As Integer
+        Dim Count As Integer
+        Dim Character As Char
+        Dim RepeatedCharacter As Char
+        Dim y As Integer
+
+        'Initialisation:'
+        Sentence = ""
+        Alphabets = "abcdefghijklmnopqrstuvwxyz"
+        HighestCount = -1000
+        Count = 0
+        Character = ""
+        RepeatedCharacter = ""
+        y = 0
+
+        Console.Write("Enter a sentence: ")
+        Sentence = LCase(Console.ReadLine())
+
+        For x = 1 To 26
+            Count = 0
+            Character = Mid(Alphabets, x, 1)
+            y = InStr(Sentence, Character)
+            While y > 0
+                Count = Count + 1
+                y = y + 1
+                y = InStr(y, Sentence, Character)
+            End While
+            If Count > HighestCount Then
+                HighestCount = Count
+                RepeatedCharacter = Character
+            End If
+        Next
+
+        Console.WriteLine("The most repeated character is " & RepeatedCharacter & "!")
+        Console.WriteLine("Number of times it occurs " & Str(HighestCount) & " times!")
+        Console.ReadKey()
