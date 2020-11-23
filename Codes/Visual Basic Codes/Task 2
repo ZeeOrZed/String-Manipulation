@@ -1,1 +1,23 @@
--
+'The Task: Replace selected character with another.'
+
+        'Declarations:'
+        Dim Sentence As String
+        Dim Character As Char
+        Dim Count As Integer
+
+        'Initalisation:'
+        Sentence = ""
+        Character = ""
+
+        Console.WriteLine("Enter the Sentence: ")
+        Sentence = Console.ReadLine
+
+        For Count = 1 To Len(Sentence)
+            Character = Mid(Sentence, Count, Len(Sentence))
+            If Character = "*" Then
+                Mid(Sentence, Count, Len(Sentence)) = "a"
+            End If
+        Next
+
+        Console.WriteLine("Your sentence has been corrected to: " & Sentence)
+        Console.ReadLine()
