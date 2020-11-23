@@ -12,10 +12,10 @@ Character <-- ' '
 OUTPUT "Enter the sentence: "
 INPUT Sentence
 
-FOR Count = 1 TO Len(Sentence)
-    Character <-- Mid(Sentence, Count, Len(Sentence))
+FOR Count = 1 TO LENGTH(Sentence)
+    Character <-- Mid(Sentence, Count, LENGTH(Sentence))
     IF Character = "*" THEN
-       Mid(Sentence, Count, Len(Sentence)) <-- "a"
+       Mid(Sentence, Count, LENGTH(Sentence)) <-- "a"
     END IF
 NEXT Count
 
