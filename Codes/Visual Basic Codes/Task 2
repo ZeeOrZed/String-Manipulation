@@ -21,3 +21,4 @@
 
         Console.WriteLine("Your sentence has been corrected to: " & Sentence)
         Console.ReadLine()
+
