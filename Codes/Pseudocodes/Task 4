@@ -1,0 +1,41 @@
+'The Task: Find the character that appears most number of times in an entered string.'
+
+//DECLARATIONS:
+DECLARE Sentence: STRING
+DECLARE Alphabets: STRING
+DECLARE HighestCount: INTEGER
+DECLARE Count: INTEGER
+DECLARE Character: CHAR
+DECLARE RepeatedCharacter: CHAR
+DECLARE y: INTEGER
+
+//INITIALISATION:
+Sentence <-- ""
+Alphabets <-- "abcdefghijklmnopqrstuvwxyz"
+HighestCount <-- -1000
+Count <-- 0 
+Character <-- ' '
+RepeatedCharacter <-- ' '
+y <-- 0
+
+OUTPUT "Enter a sentence: "
+INPUT Sentence
+Sentence <-- LCASE(Sentence)
+
+FOR x = 1 TO 26
+    Count <-- 0
+    Character <-- Mid(Alphabets, x, 1)
+    y <-- INSTR(Sentence, Character)
+    WHILE y > 0
+          Count <-- Count + 1
+          y <-- y + 1
+          y <-- INSTR(y, Sentence, Character)
+    ENDWHILE
+    IF Count > HighestCount THEN
+       HighestCount <-- Count
+       RepeatedCharacter <-- Character
+    ENDIF
+NEXT x
+
+OUTPUT "The most repeated character is " & RepeatedCharacter & "!"
+OUTPUT "Number of times it is repeated: " & STR(HighestCount) & " times!"
