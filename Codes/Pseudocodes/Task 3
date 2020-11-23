@@ -1,0 +1,23 @@
+'The Task: Count and output the ASCII value of an entered character.'
+
+//DECLARATIONS:
+DECLARE Character: CHAR
+DECLARE CharacterValue: INTEGER
+DECLARE Total: INTEGER
+
+//INITIALISATION:
+Character <-- ' '
+CharacterValue <-- 0
+Total <-- 0
+
+OUTPUT "Enter a character: "
+INTPUT Character
+
+WHILE Character <> "."
+      CharacterValue <-- ASCII(Character)
+      OUTPUT "The ASCII value of the character you've entered is: " & CharacterValue
+      Total <-- Total + CharacterValue
+      OUTPUT "The total added ASCII value of the characters you have entered so far is: " & Total
+      OUTPUT "Enter a character. if you do not want to. enter '.' to emd the program: "
+      INPUT Character
+END WHILE
