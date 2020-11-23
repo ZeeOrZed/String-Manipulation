@@ -1,0 +1,25 @@
+'Task: Count and output the ASCII value of an entered character.'
+
+        'Declarations:'
+        Dim Character As Char
+        Dim CharacterValue As Integer
+        Dim Total As Integer
+
+        'Initialisation:'
+        Character = ""
+        CharacterValue = 0
+        Total = 0
+
+        Console.Write("Enter a character: ")
+        Character = Console.ReadLine()
+        Console.WriteLine()
+
+        While Character <> "."
+            CharacterValue = Asc(Character)
+            Console.WriteLine("THe ASCII value of the character you've entered is: " & CharacterValue)
+            Total = Total + CharacterValue
+            Console.WriteLine("The total added ASCII value of the characters you have entered so far is: " & Total)
+            Console.WriteLine()
+            Console.WriteLine("Enter a character. If you do not want to, enter '.' to end the program: ")
+            Character = Console.ReadLine
+        End While
