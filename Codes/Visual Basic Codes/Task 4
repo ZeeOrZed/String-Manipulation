@@ -37,5 +37,5 @@
         Next
 
         Console.WriteLine("The most repeated character is " & RepeatedCharacter & "!")
-        Console.WriteLine("Number of times it occurs " & Str(HighestCount) & " times!")
+        Console.WriteLine("Number of times it is repeated: " & Str(HighestCount) & " times!")
         Console.ReadKey()
