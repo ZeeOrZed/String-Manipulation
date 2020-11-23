@@ -1,0 +1,18 @@
+'The Task: Given a string, find the first appearance of the substring 'not' and 'bad'. If the 'bad' follows the 'not', replace the whole 'not'...'bad' substring With 'good'. Return the resulting String.'
+
+//DECLARATIONS:
+DECLARE Sentence: STRING
+DECLARE Count: INTEGER
+
+//INITIALISATION:
+Sentence <-- ""
+
+OUTPUT "Enter an opinion of yours: "
+INPUT Sentence
+
+FOR Count = 1 TO LENGTH(Sentence)
+    IF Mid(Sentence, Count, LENGTH(Sentence)) = "not bad" OR Mid(Sentence, Count, LENGTH(Sentence)) = "not that bad" THEN
+       MID(Sentence, Count, LENGTH(Sentence)) = "good." & "                                                               "
+       OUTPUT "Your opinion has been changed to: " & Sentence
+    END IF
+NEXT Count
