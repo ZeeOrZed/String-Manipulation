@@ -1,0 +1,31 @@
+'The Task: Given a string 's', return a string made of the first 2 and the last 2 characters of the original string. If original string is less than/equal to 4, return original string instead.'
+
+//DECLARATIONS:
+DECLARE Str: STRING
+DELCARE Letter1: CHAR
+DECLARE Letter2: CHAR
+DECLARE Letter3: CHAR
+DECLARE Letter4: CHAR
+DECLARE Count: INTEGER
+
+//INITIALISATION:
+Str <-- ""
+Letter1 <-- ' '
+Letter2 <-- ' '
+Letter3 <-- ' '
+Letter4 <-- ' '
+
+OUTPUT "Enter a word/sentence: "
+INPUT Str
+
+IF LENGTH(Str) <= 4 THEN
+   OUTPUT "Your word/sentence will not be shortened. It will remain the same, being: " & Str
+ELSE
+    FOR Count - 1 to LENGTH(Str)
+        Letter1 <-- Mid(Str, 1, LENGTH(Str))
+        Letter2 <-- Mid(Str, 2, LENGTH(Str))
+        Letter3 <-- Mid(Str, LENGTH(Str) - 1, LENGTH(Str))
+        Letter4 <-- Mid(Str, LENGTH(STR), LENGTH(STR))
+    NEXT
+    OUTPUT "Your word/sentence has been shortened to: " & Letter1 & Letter2 & Letter3 & Letter4
+ENDIF
